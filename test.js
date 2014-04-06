@@ -1,0 +1,57 @@
+const expect = require('chai').expect;
+const isGitUrl = require('./');
+
+var validURLs = [
+  'git@github.com:user/project.git',
+  'https://github.com/user/project.git',
+  'http://github.com/user/project.git',
+  'git@192.168.101.127:user/project.git',
+  'https://192.168.101.127/user/project.git',
+  'http://192.168.101.127/user/project.git',
+  'ssh://user@host.xz:port/path/to/repo.git/',
+  'ssh://user@host.xz/path/to/repo.git/',
+  'ssh://host.xz:port/path/to/repo.git/',
+  'ssh://host.xz/path/to/repo.git/',
+  'ssh://user@host.xz/path/to/repo.git/',
+  'ssh://host.xz/path/to/repo.git/',
+  'ssh://user@host.xz/~user/path/to/repo.git/',
+  'ssh://host.xz/~user/path/to/repo.git/',
+  'ssh://user@host.xz/~/path/to/repo.git',
+  'ssh://host.xz/~/path/to/repo.git',
+  'git://host.xz/path/to/repo.git/',
+  'git://host.xz/~user/path/to/repo.git/',
+  'http://host.xz/path/to/repo.git/',
+  'https://host.xz/path/to/repo.git/'
+];
+
+var invalidURLs = [
+  '/path/to/repo.git/',
+  'path/to/repo.git/',
+  '~/path/to/repo.git',
+  'file:///path/to/repo.git/',
+  'file://~/path/to/repo.git/',
+  'user@host.xz:/path/to/repo.git/',
+  'host.xz:/path/to/repo.git/',
+  'user@host.xz:~user/path/to/repo.git/',
+  'host.xz:~user/path/to/repo.git/',
+  'user@host.xz:path/to/repo.git',
+  'host.xz:path/to/repo.git',
+  'rsync://host.xz/path/to/repo.git/'
+];
+
+
+describe('parse(url)', function () {
+  validURLs.forEach(function(url) {
+    it('should return true for each valid (git) URL.', function (done) {
+      expect(isGitUrl(url)).to.equal(true);
+      done();
+    });
+  });
+
+  invalidURLs.forEach(function(url) {
+    it('should return false for each invalid (non-git) URL.', function (done) {
+      expect(isGitUrl(url)).to.equal(false);
+      done();
+    });
+  });
+});

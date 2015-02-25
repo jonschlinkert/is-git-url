@@ -5,7 +5,8 @@
  * Licensed under the MIT License.
  */
 
-module.exports = function(str) {
-  var re = /(?:git|ssh|https?|git@[\w\.]+):(?:\/\/)?[\w\.@:\/~_-]+\.git\/?/g;
+
+module.exports = function isGitUrl(str) {
+  var re = /(?:git|ssh|https?|git@[\w\.]+):(?:\/\/)?[\w\.@:\/~_-]+\.git\/?/;
   return re.test(str);
 };

@@ -1,5 +1,12 @@
-const expect = require('chai').expect;
-const isGitUrl = require('./');
+/*!
+ * is-git-url <https://github.com/jonschlinkert/is-git-url>
+ *
+ * Copyright (c) 2015, Jon Schlinkert.
+ * Licensed under the MIT License.
+ */
+
+var assert = require('assert');
+var isGitUrl = require('./');
 
 var validURLs = [
   'git@github.com:user/project.git',
@@ -44,18 +51,15 @@ var invalidURLs = [
 ];
 
 
-describe('parse(url)', function () {
-  validURLs.forEach(function(url) {
-    it('should return true for each valid (git) URL.', function (done) {
-      expect(isGitUrl(url)).to.equal(true);
-      done();
-    });
-  });
-
-  invalidURLs.forEach(function(url) {
-    it('should return false for each invalid (non-git) URL.', function (done) {
-      expect(isGitUrl(url)).to.equal(false);
-      done();
-    });
+validURLs.forEach(function(url, i) {
+  it('git URL: #' + i++, function () {
+    assert(isGitUrl(url) === true);
   });
 });
+
+invalidURLs.forEach(function(url, i) {
+  it('not a git URL: #' + i++, function () {
+    assert(isGitUrl(url) === false);
+  });
+});
+

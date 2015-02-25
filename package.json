@@ -1,7 +1,7 @@
 {
   "name": "is-git-url",
   "description": "Regex to validate that a URL is a git url.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "homepage": "https://github.com/jonschlinkert/is-git-url",
   "author": {
     "name": "Jon Schlinkert",
@@ -28,16 +28,11 @@
   "scripts": {
     "test": "mocha"
   },
-  "devDependencies": {
-    "chai": "~1.9.1"
-  },
   "keywords": [
-    "docs",
-    "documentation",
-    "generate",
-    "generator",
-    "markdown",
-    "templates",
-    "verb"
+    "git",
+    "github",
+    "regex",
+    "regexp",
+    "url"
   ]
 }

@@ -14,12 +14,23 @@
   "bugs": {
     "url": "https://github.com/jonschlinkert/is-git-url/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/jonschlinkert/is-git-url/blob/master/LICENSE-MIT"
-    }
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/jonschlinkert/is-git-url/blob/master/LICENSE"
+  },
+  "files": [
+    "index.js"
   ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.8"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "chai": "~1.9.1"
+  },
   "keywords": [
     "docs",
     "documentation",
@@ -28,16 +39,5 @@
     "markdown",
     "templates",
     "verb"
-  ],
-  "main": "index.js",
-  "engines": {
-    "node": ">=0.8"
-  },
-  "scripts": {
-    "test": "mocha -R test"
-  },
-  "devDependencies": {
-    "verb": "~0.2.1",
-    "chai": "~1.9.1"
-  }
+  ]
 }

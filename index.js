@@ -6,6 +6,6 @@
  */
 
 module.exports = function(str) {
-  var re = /(?:git|ssh|https?|git@[\w\.]+):(?:\/\/)?[\w\.@:\/-~]+\.git\/?/g;
+  var re = /(?:git|ssh|https?|git@[\w\.]+):(?:\/\/)?[\w\.@:\/~_-]+\.git\/?/g;
   return re.test(str);
 };

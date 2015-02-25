@@ -3,6 +3,8 @@ const isGitUrl = require('./');
 
 var validURLs = [
   'git@github.com:user/project.git',
+  'git@github.com:user/some-project.git',
+  'git@github.com:user/some_project.git',
   'https://github.com/user/project.git',
   'http://github.com/user/project.git',
   'git@192.168.101.127:user/project.git',
@@ -21,7 +23,9 @@ var validURLs = [
   'git://host.xz/path/to/repo.git/',
   'git://host.xz/~user/path/to/repo.git/',
   'http://host.xz/path/to/repo.git/',
-  'https://host.xz/path/to/repo.git/'
+  'https://host.xz/path/to/repo.git/',
+  'git@github.com:user/some-project.git',
+  'git@github.com:user/some_project.git'
 ];
 
 var invalidURLs = [

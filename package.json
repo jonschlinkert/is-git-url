@@ -1,7 +1,7 @@
 {
   "name": "is-git-url",
   "description": "Regex to validate that a URL is a git url.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "homepage": "https://github.com/jonschlinkert/is-git-url",
   "author": {
     "name": "Jon Schlinkert",
@@ -14,10 +14,7 @@
   "bugs": {
     "url": "https://github.com/jonschlinkert/is-git-url/issues"
   },
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/jonschlinkert/is-git-url/blob/master/LICENSE"
-  },
+  "license": "MIT",
   "files": [
     "index.js"
   ],
@@ -33,6 +30,7 @@
     "github",
     "regex",
     "regexp",
+    "test",
     "url"
   ]
 }

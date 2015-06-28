@@ -36,6 +36,8 @@ var validURLs = [
 ];
 
 var invalidURLs = [
+  'git@github.com:user/some_project.gitfoo',
+  'git@github.com:user/some_project.git/foo',
   '/path/to/repo.git/',
   'path/to/repo.git/',
   '~/path/to/repo.git',

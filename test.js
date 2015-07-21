@@ -12,6 +12,10 @@ var isGitUrl = require('./');
 var validURLs = [
   'git://github.com/ember-cli/ember-cli.git#v0.1.0',
   'git://github.com/ember-cli/ember-cli.git#ff786f9f',
+  'git://github.com/ember-cli/ember-cli.git#master',
+  'git://github.com/ember-cli/ember-cli.git#gh-pages',
+  'git://github.com/ember-cli/ember-cli.git#quick_fix',
+  'git://github.com/ember-cli/ember-cli.git#Quick-Fix',
   'git@github.com:user/project.git',
   'git@github.com:user/some-project.git',
   'git@github.com:user/some_project.git',

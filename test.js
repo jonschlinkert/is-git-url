@@ -5,6 +5,7 @@
  * Licensed under the MIT License.
  */
 
+/* deps: mocha */
 var assert = require('assert');
 var isGitUrl = require('./');
 

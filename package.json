@@ -32,5 +32,8 @@
     "regexp",
     "test",
     "url"
-  ]
+  ],
+  "devDependencies": {
+    "mocha": "^2.2.5"
+  }
 }

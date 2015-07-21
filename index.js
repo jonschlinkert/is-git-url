@@ -6,6 +6,6 @@
  */
 
 module.exports = function isGitUrl(str) {
-  var re = /(?:git|ssh|https?|git@[\w\.]+):(?:\/\/)?[\w\.@:\/~_-]+\.git\/?$/;
+  var re = /(?:git|ssh|https?|git@[\w\.]+):(?:\/\/)?[\w\.@:\/~_-]+\.git(?:\/?|\#[a-z0-9\.]+?)$/;
   return re.test(str);
 };

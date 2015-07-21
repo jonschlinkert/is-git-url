@@ -9,6 +9,8 @@ var assert = require('assert');
 var isGitUrl = require('./');
 
 var validURLs = [
+  'git://github.com/ember-cli/ember-cli.git#v0.1.0',
+  'git://github.com/ember-cli/ember-cli.git#ff786f9f',
   'git@github.com:user/project.git',
   'git@github.com:user/some-project.git',
   'git@github.com:user/some_project.git',
@@ -54,13 +56,13 @@ var invalidURLs = [
 
 
 validURLs.forEach(function(url, i) {
-  it('git URL: #' + i++, function () {
+  it('git URL: #' + (i++) + ' - ' + url, function () {
     assert(isGitUrl(url) === true);
   });
 });
 
 invalidURLs.forEach(function(url, i) {
-  it('not a git URL: #' + i++, function () {
+  it('not a git #' + (i++) + ' - ' + url, function () {
     assert(isGitUrl(url) === false);
   });
 });

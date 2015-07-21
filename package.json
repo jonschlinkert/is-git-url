@@ -1,7 +1,7 @@
 {
   "name": "is-git-url",
   "description": "Regex to validate that a URL is a git url.",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "homepage": "https://github.com/jonschlinkert/is-git-url",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "repository": "jonschlinkert/is-git-url",

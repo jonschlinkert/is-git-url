@@ -1,16 +1,10 @@
 {
   "name": "is-git-url",
   "description": "Regex to validate that a URL is a git url.",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "homepage": "https://github.com/jonschlinkert/is-git-url",
-  "author": {
-    "name": "Jon Schlinkert",
-    "url": "https://github.com/jonschlinkert"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/jonschlinkert/is-git-url.git"
-  },
+  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "repository": "jonschlinkert/is-git-url",
   "bugs": {
     "url": "https://github.com/jonschlinkert/is-git-url/issues"
   },
@@ -25,6 +19,9 @@
   "scripts": {
     "test": "mocha"
   },
+  "devDependencies": {
+    "mocha": "^2.2.5"
+  },
   "keywords": [
     "git",
     "github",
@@ -33,7 +30,15 @@
     "test",
     "url"
   ],
-  "devDependencies": {
-    "mocha": "^2.2.5"
+  "verb": {
+    "related": {
+      "list": [
+        "git-repo-name",
+        "git-username",
+        "github-contributors",
+        "git-branch",
+        "parse-github-url"
+      ]
+    }
   }
 }

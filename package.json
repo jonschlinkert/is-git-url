@@ -4,6 +4,13 @@
   "version": "0.2.3",
   "homepage": "https://github.com/jonschlinkert/is-git-url",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "contributors": [
+    "Charlike Mike Reagent (https://i.am.charlike.online)",
+    "Daniel Cadenas <dcadenas@gmail.com> (http://craftedcode.com)",
+    "Emre Unal (https://github.com/quaertym)",
+    "Jon Schlinkert <jon.schlinkert@sellside.com> (http://twitter.com/jonschlinkert)",
+    "Loïc Mahieu (http://iGLOO.be)"
+  ],
   "repository": "jonschlinkert/is-git-url",
   "bugs": {
     "url": "https://github.com/jonschlinkert/is-git-url/issues"
@@ -25,6 +32,7 @@
   "keywords": [
     "git",
     "github",
+    "is",
     "regex",
     "regexp",
     "test",
@@ -33,10 +41,10 @@
   "verb": {
     "related": {
       "list": [
+        "git-branch",
         "git-repo-name",
         "git-username",
         "github-contributors",
-        "git-branch",
         "parse-github-url"
       ]
     }

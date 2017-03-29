@@ -59,7 +59,6 @@ var invalidURLs = [
   'rsync://host.xz/path/to/repo.git/'
 ];
 
-
 validURLs.forEach(function(url, i) {
   it('git URL: #' + (i++) + ' - ' + url, function () {
     assert(isGitUrl(url) === true);
@@ -67,7 +66,7 @@ validURLs.forEach(function(url, i) {
 });
 
 invalidURLs.forEach(function(url, i) {
-  it('not a git #' + (i++) + ' - ' + url, function () {
+  it('not a git url #' + (i++) + ' - ' + url, function () {
     assert(isGitUrl(url) === false);
   });
 });

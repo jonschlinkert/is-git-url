@@ -30,6 +30,9 @@ var validURLs = [
   'https://192.168.101.127/user/project.git',
   'https://github.com/user/project.git',
   'https://host.xz/path/to/repo.git/',
+  'https://username::;*%$:@github.com/username/repository.git',
+  'https://username:$fooABC@:@github.com/username/repository.git',
+  'https://username:password@github.com/username/repository.git',
   'ssh://host.xz/path/to/repo.git/',
   'ssh://host.xz/path/to/repo.git/',
   'ssh://host.xz/~/path/to/repo.git',
@@ -39,7 +42,7 @@ var validURLs = [
   'ssh://user@host.xz/path/to/repo.git/',
   'ssh://user@host.xz/~/path/to/repo.git',
   'ssh://user@host.xz/~user/path/to/repo.git/',
-  'ssh://user@host.xz:port/path/to/repo.git/'
+  'ssh://user@host.xz:port/path/to/repo.git/',
 ];
 
 var invalidURLs = [

@@ -27,7 +27,8 @@
     "test": "mocha"
   },
   "devDependencies": {
-    "mocha": "^2.2.5"
+    "gulp-format-md": "^0.1.12",
+    "mocha": "^3.2.0"
   },
   "keywords": [
     "git",
@@ -47,6 +48,17 @@
         "github-contributors",
         "parse-github-url"
       ]
+    },
+    "toc": false,
+    "layout": "default",
+    "tasks": [
+      "readme"
+    ],
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "lint": {
+      "reflinks": true
     }
   }
 }
